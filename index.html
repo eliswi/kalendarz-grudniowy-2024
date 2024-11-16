@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Eliza Świątkowska, Magdalena Nowak">
+    <title>Matematyczny kalendarz grudniowy 2024</title>
+    <meta name="description" content="Matematyczny kalendarz grudniowy 2024 w ramach projektu 'Dzień Matematyki. Matematyka, Sztuka i Kreatywność'">
+    <link rel="icon" href="/kalendarz-grudniowy-2024/assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      header {
+        background: #e21a1a;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-md-2">
+            <div class="px-xl-2">
+              <img class="mw-100" alt="Logo projektu - Dzień Matematyki. Matematyka, Sztuka i Kreatywność" src="./assets/logo-alpha-projekt-dzien-matematyki-matematyka-sztuka-i-kreatywnosc.png" />
+            </div>
+          </div>
+          <div class="col-6 col-md-8 d-flex flex-column justify-content-center">
+            <h1 class="d-block d-md-none h4 text-white text-center mb-3">Matematyczny kalendarz grudniowy 2024</h1>
+            <h1 class="d-none d-md-block text-white text-center mb-3">Matematyczny kalendarz grudniowy 2024</h1>
+            <div class="d-none d-xl-block">
+              <h2 class="text-white text-center small fw-bold"><em>Przygotowany w ramach ogólnopolskiego projektu edukacyjnego <br>"Dzień Matematyki - Matematyka, Sztuka i Kreatywność"</em></h2>
+              <h3 class="text-white text-center small fw-normal"><em>Zadania oraz odpowiedzi do zadań zostały przygotowane przez uczennicę klasy 3Lb, Magdalenę Nowak</em></h3>
+            </div>
+          </div>
+          <div class="col-3 col-md-2">
+            <div class="px-3 px-xl-5">
+              <img class="mw-100" src="./assets/pi-mikolaj.jpg" alt="Liczba Pi w czapce Mikolaja" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xl-2"></div>
+          <div class="col-12 col-xl-8 d-flex flex-column justify-content-center d-xl-none">
+            <h2 class="text-white text-center small fw-bold"><em>Przygotowany w ramach ogólnopolskiego projektu edukacyjnego <br>"Dzień Matematyki - Matematyka, Sztuka i Kreatywność"</em></h2>
+            <h3 class="text-white text-center small fw-normal"><em>Zadania oraz odpowiedzi do zadań zostały przygotowane przez uczennicę klasy 3Lb, Magdalenę Nowak</em></h3>
+          </div>
+          <div class="col-12 col-xl-2"></div>
+        </div>
+      </div>
+    </header>
+    <main class="py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Zadania -->
+          <div class="col-6 col-md-5 col-xl-4 pe-0">
+            <h4 class="mb-2 pe-3 text-end"><b>Zadania</b></h4>
+            <!-- Lista zadań uzupełniania skryptem JS -->
+            <ul class="list-group list-unstyled text-end" id="zadania-lista">
+              <li><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></li>
+            </ul>
+          </div>
+          <!-- Odpowiedzi -->
+          <div class="col-6 col-md-5 col-xl-4 ps-0">
+            <h4 class="mb-2 ps-3 text-start text-secondary "><em>Odpowiedzi</em></h4>
+            <!-- Lista odpowiedzi uzupełniana skryptem JS -->
+            <ul class="list-group list-unstyled text-start" id="odpowiedzi-lista">
+              <li><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="text-center pt-3 my-3 border-top">Podziel się tą stroną z kolegą lub koleżanką obok! <br/>Pokaż poniższy kod QR do zeskanowania:</h4>
+        <div class="d-flex justify-content-center">
+          <div class="col-6 col-md-2">
+            <img class="mw-100" src="./assets/kod-qr-do-strony-www.png"/>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="border-top py-3">
+      <p class="text-center text-muted small">© 2024 Eliza&nbsp;Świątkowska - Koordynator&nbsp;projektu</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
