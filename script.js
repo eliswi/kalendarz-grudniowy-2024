@@ -3,9 +3,8 @@ var odpowiedziListaStr = "";
 var dataDzisiejsza = new Date();
 
 // TODO: zamien finalnie na grudniowe daty !!!
-for (var listopad = new Date(2024, 10, 1); d <= dataDzisiejsza; listopad.setDate(listopad.getDate() + 1)) {
-    var prefixPlikuZadania = 
-    var dzienListopada = (listopad.getDate < 10 ? "0" : "") + listopad.getDate();
+for (var listopad = new Date(2024, 10, 1); listopad <= dataDzisiejsza; listopad.setDate(listopad.getDate() + 1)) {
+    var dzienListopada = (listopad.getDate() < 10 ? "0" : "") + listopad.getDate();
   
     zadaniaListaStr += 
       '<li><a href="/kalendarz-grudniowy-2024/zadania_' 
