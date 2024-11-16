@@ -3,7 +3,7 @@ var odpowiedziListaStr = "";
 var dataDzisiejsza = new Date();
 
 // TODO: zamien finalnie na grudniowe daty !!!
-for (var danyDzien = new Date(2024, 10, 1); danyDzien <= dataDzisiejsza; danyDzien.setDate(danyDzien.getDate() + 1)) {
+for (var danyDzien = new Date(2024, 10, 1); danyDzien.getDate() <= 20 && danyDzien <= dataDzisiejsza; danyDzien.setDate(danyDzien.getDate() + 1)) {
     var dzienListopadaStr = (danyDzien.getDate() < 10 ? "0" : "") + danyDzien.getDate();
   
     zadaniaListaStr += 
@@ -14,7 +14,7 @@ for (var danyDzien = new Date(2024, 10, 1); danyDzien <= dataDzisiejsza; danyDzi
       + ' listopada 2024</a></li>';
 
     // Nie pokazuj odpowiedzi w danym dniu (odpowiedzi na zadania z danego dnia pojawiają się w dniu następującym).
-    if (danyDzien === dataDzisiejsza) {
+    if (danyDzien.getDate() === dataDzisiejsza.getDate()) {
         break;
     }
     
